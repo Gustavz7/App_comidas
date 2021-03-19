@@ -1,32 +1,64 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <p>
-      For a guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
-    </p>
-    <h3>Installed CLI Plugins</h3>
-    <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
-    </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
-      <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
-      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a></li>
-      <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
-    </ul>
+  <div class="app-container">
+
+    <div class="welcome-mjs-container">
+      <p CLass="welcome-msj"> Hi <b>Guz</b>!</p>
+    </div>
+
+    <div class="food-promotion-container">
+      <div class="food-title">
+        Hamburguesa + Papas fritas
+      </div>
+      <div class="food-description">
+        El combo mas conveniente para tu dia
+      </div>
+      <div class="food-img-container">
+        <img class="food-img" src="https://image.freepik.com/foto-gratis/manzana-roja-aislada_74190-1286.jpg" alt="Manzana.png">
+      </div>
+    </div>
+
+    <div class="category-roll">
+      <div class="category-product">
+        <div class="product-icon">
+          <i class="bi bi-cup-straw"></i>
+        </div>
+        <div class="product-name"> Hamburguesa </div>
+      </div>
+    </div>
+
+    <div class="top-products-container-roll">
+      <p class="top-products-title"> Top Productos</p>
+      <div class="top-product">
+        <div class="top-img">
+        </div>
+        <div class="top-name">
+        </div>
+        <div class="top-price"></div>
+        <div class="top-add-icon">
+          <i class="bi bi-plus-circle-fill"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-bottom-container">
+      <div class="menu-bottom">
+        <a class="nav-icon">
+         <i class="bi bi-house"></i>
+        </a>
+       <a class="nav-icon">
+          <i class="bi bi-bag-check"></i>
+       </a>
+       <a class="nav-icon">
+         <i class="bi bi-heart"></i>
+       </a>
+       <a class="nav-icon">
+         <i class="bi bi-clock-history"></i>
+       </a>
+
+
+      </div>
+    </div>
+
   </div>
 </template>
 
@@ -40,19 +72,39 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h3 {
-  margin: 40px 0 0;
+<style>
+.welcome-msj{
+  text-align: left;
+  margin: 10px;
+  padding: 10px;
+  font-size: 30px;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
+.menu-bottom-container{
+
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
+.menu-bottom{
+  width: 100%;
+  align-content: center;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  padding: 20px;
 }
-a {
-  color: #42b983;
+.nav-icon{
+
+}
+.food-img{
+  width: 50px;
+}
+
+
+
+
+.top-products-title{
+  font-size: 20px;
+  text-align: left;
+  margin: 10px;
+  padding: 10px;
 }
 </style>
