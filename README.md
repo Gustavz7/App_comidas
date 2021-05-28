@@ -1,5 +1,7 @@
 # app_comidas_v0
 
+##Este proyecto es una prueba del desarrollo de una app para dispositivos moviles, solo Front-End
+
 ## Project setup
 ```
 npm install
